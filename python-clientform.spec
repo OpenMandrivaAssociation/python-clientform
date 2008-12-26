@@ -11,6 +11,7 @@ BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 URL:		http://wwwsearch.sourceforge.net/ClientForm/
 BuildRequires:	python-devel
+BuildRequires:	python-setuptools
 
 %description
 ClientForm is a Python module for handling HTML forms on the client
