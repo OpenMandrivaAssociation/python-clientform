@@ -36,5 +36,5 @@ rm -rf %{buildroot}
 %files
 %defattr(-,root,root)
 %doc *txt *html
-%{py_platsitedir}/%{oname}*
+%{py_puresitedir}/%{oname}*
 
