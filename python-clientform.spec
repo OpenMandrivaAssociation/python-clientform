@@ -7,7 +7,6 @@ Release:	%mkrel 4
 Source0:	http://wwwsearch.sourceforge.net/%{oname}/src/%{oname}-%{version}.tar.gz
 License:	BSD
 Group:		Development/Python
-BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}-buildroot
 BuildArch:	noarch
 URL:		http://wwwsearch.sourceforge.net/ClientForm/
 BuildRequires:	python-devel
@@ -27,14 +26,8 @@ interface is not the same.
 python setup.py build
 
 %install
-rm -rf %{buildroot}
 python setup.py install --single-version-externally-managed --root=%{buildroot}
 
-%clean
-rm -rf %{buildroot}
-
 %files
-%defattr(-,root,root)
 %doc *txt *html
 %{py_puresitedir}/%{oname}*
-
