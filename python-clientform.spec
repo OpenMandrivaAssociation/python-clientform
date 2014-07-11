@@ -3,7 +3,7 @@
 Summary:	Client-side HTML form handling
 Name:		python-clientform
 Version:	0.2.10
-Release:	9
+Release:	10
 License:	BSD
 Group:		Development/Python
 Url:		http://wwwsearch.sourceforge.net/ClientForm/
