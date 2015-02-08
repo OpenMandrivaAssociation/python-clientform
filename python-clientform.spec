@@ -10,7 +10,7 @@ Url:		http://wwwsearch.sourceforge.net/ClientForm/
 Source0:	http://wwwsearch.sourceforge.net/%{oname}/src/%{oname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python-setuptools
-BuildRequires:	pkgconfig(python)
+BuildRequires:	pkgconfig(python2)
 
 %description
 ClientForm is a Python module for handling HTML forms on the client
@@ -23,12 +23,12 @@ interface is not the same.
 %setup -qn %{oname}-%{version}
 
 %build
-python setup.py build
+python2 setup.py build
 
 %install
-python setup.py install --single-version-externally-managed --root=%{buildroot}
+python2 setup.py install --single-version-externally-managed --root=%{buildroot}
 
 %files
 %doc *txt *html
-%{py_puresitedir}/%{oname}*
+%{py2_puresitedir}/%{oname}*
 
