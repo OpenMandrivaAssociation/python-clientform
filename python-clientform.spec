@@ -9,7 +9,8 @@ Group:		Development/Python
 Url:		http://wwwsearch.sourceforge.net/ClientForm/
 Source0:	http://wwwsearch.sourceforge.net/%{oname}/src/%{oname}-%{version}.tar.gz
 BuildArch:	noarch
-BuildRequires:	python-setuptools
+BuildRequires:	python2-setuptools
+BuildRequires:  python-setuptools
 BuildRequires:	pkgconfig(python2)
 
 %description
