@@ -6,7 +6,7 @@ Version:	0.2.10
 Release:	14
 License:	BSD
 Group:		Development/Python
-Url:		http://wwwsearch.sourceforge.net/ClientForm/
+Url:		https://wwwsearch.sourceforge.net/ClientForm/
 Source0:	http://wwwsearch.sourceforge.net/%{oname}/src/%{oname}-%{version}.tar.gz
 BuildArch:	noarch
 BuildRequires:	python2-setuptools
